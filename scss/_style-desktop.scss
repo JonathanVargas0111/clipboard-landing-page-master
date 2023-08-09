@@ -23,6 +23,114 @@
                 }
             }
         }
-
+    }
+    .main {
+        padding: 40px 10%;    
+        .section-keep {              
+            &__container-snippets {
+                display: flex;
+                flex-direction: row;
+                height: 400px;
+                align-items: center;
+            }
+    
+            &__img-container {
+                padding: 0;
+                max-width: 50%;
+                height: 100%;
+                display: flex;
+                align-items: center;
+            }
+            
+            &__img {         
+                width: 125%;
+                position: relative;
+                left: -25%;      
+            }
+    
+            &__snippet-list {
+                text-align: center;
+                max-width: 50%;
+                padding: 20px;                
+            }
+    
+            &__snippet {
+                padding: 10px 0px;
+                &-title {
+                    font-size: 1.2rem;
+                    margin: 5px auto;
+                }
+                &-text {
+                    color: $grayish-blue;
+                    font-size: 1rem;
+                }
+            }
+        }
+    
+    }
+}
+@media  (min-width: $scream-desktop) {
+    .main {
+        padding: 40px 10%;    
+        .section-keep {      
+            margin-top: 40px;
+            margin-bottom: 40px;        
+            &__container-snippets {              
+                height: 400px;
+            }
+       
+            &__snippet-list {               
+                padding: 20px;                
+            }
+    
+            &__snippet {
+                padding: 10px 0px;
+                &-title {
+                    font-size: 2rem;
+                    margin: 5px auto;
+                }
+                &-text {
+                    color: $grayish-blue;
+                    font-size: 1.3rem;
+                }
+            }
+        }    
+    }
+}
+@media  (min-width: $scream-desktopXL) {
+    .main {
+        padding: 50px 20%;    
+        .section-keep {              
+            &__container-snippets {                
+                height: 800px;
+            }
+    
+            &__img-container {
+                width: 400%;              
+            }
+            
+            &__img {
+                width: 400%; /* Aumentar el tamaño de la imagen */
+                left: -250px;
+            }
+    
+            &__snippet-list {
+                text-align: center;
+                max-width: 50%;
+                padding: 20px;                
+            }
+    
+            &__snippet {
+                padding: 10px 0px;
+                &-title {
+                    font-size: 3rem;
+                    margin: 5px auto;
+                }
+                &-text {
+                    color: $grayish-blue;
+                    font-size: 2rem;
+                }
+            }
+        }   
     }
 }
