@@ -37,8 +37,10 @@ body {
 }
 .header__logo {
   background-image: url("../images/bg-header-mobile.png");
-  background-size: cover; /* Esto ajustará la imagen para que cubra todo el espacio sin distorsionarla */
-  background-position: center center; /* Esto centrará la imagen en el elemento */
+  background-size: cover;
+  /* Esto ajustará la imagen para que cubra todo el espacio sin distorsionarla */
+  background-position: center center;
+  /* Esto centrará la imagen en el elemento */
   padding: 50px 30px;
 }
 .header .header-info__title {
@@ -54,6 +56,32 @@ body {
 .header .header-info__buttons {
   display: flex;
   flex-direction: column;
+}
+
+@media (min-width: 640px) {
+  .header {
+    text-align: center;
+  }
+  .header__logo {
+    background-image: url("../images/bg-header-desktop.png");
+  }
+  .header .header-info {
+    padding: 0 20%;
+  }
+  .header .header-info__buttons {
+    display: flex;
+    flex-direction: row;
+  }
+  .header .header-info__buttons {
+    justify-content: center;
+    margin-top: 20px;
+  }
+  .header .header-info__buttons .btn {
+    width: 40%;
+    max-width: 200px;
+    padding: 15px;
+    font-size: 1rem;
+  }
 }
 
 /*# sourceMappingURL=style.css.map */

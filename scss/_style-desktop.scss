@@ -1,0 +1,27 @@
+
+@media  (min-width: $scream-tablet) {
+    .header{
+        text-align: center;        
+        &__logo{
+            background-image: url("../images/bg-header-desktop.png");
+        }
+        .header-info{ 
+            padding: 0 20%;           
+            &__buttons{
+                display: flex;
+                flex-direction: row;
+            }
+            &__buttons{
+                justify-content: center;
+                margin-top: 20px;
+                .btn{
+                    width: 40%;
+                    max-width: 200px;
+                    padding: 15px;                    
+                    font-size: 1rem;
+                }
+            }
+        }
+
+    }
+}

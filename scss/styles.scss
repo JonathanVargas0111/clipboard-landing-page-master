@@ -1,57 +1,70 @@
-
 @import 'variables'; // Importa las variables desde _variables.scss
 
-*{
+* {
     margin: 0;
-    padding: 0;    
+    padding: 0;
 }
 
-body{
+body {
     font-size: $base-font-size;
     font-family: $font-family;
 }
 
-.container{
+.container {
     padding: 20px;
 }
 
-.btn{
-    padding: 20px ;
+.btn {
+    padding: 20px;
     border: none;
     border-radius: 40px;
     margin: 10px;
     color: white;
     font-size: 1.5rem;
+
 }
-.btn--green{
-    background-color:$strong-cyan ;
+
+.btn--green {
+    background-color: $strong-cyan ;
 }
-.btn--blue{
+
+.btn--blue {
     background-color: $light-blue;
 }
 
-.header{
+.header {
     text-align: center;
-    &__logo{
+
+    &__logo {
         background-image: url("../images/bg-header-mobile.png");
-        background-size: cover; /* Esto ajustará la imagen para que cubra todo el espacio sin distorsionarla */
-        background-position: center center; /* Esto centrará la imagen en el elemento */
+        background-size: cover;
+        /* Esto ajustará la imagen para que cubra todo el espacio sin distorsionarla */
+        background-position: center center;
+        /* Esto centrará la imagen en el elemento */
         padding: 50px 30px;
     }
-    .header-info{
-        &__title{
+
+    .header-info {
+        &__title {
             font-size: 3rem;
             font-weight: 600;
             margin: 10px auto;
         }
-        &__text{
+
+        &__text {
             font-size: 1.5rem;
             margin: 10px auto;
-            color:$grayish-blue;
+            color: $grayish-blue;
         }
-        &__buttons{
+
+        &__buttons {
             display: flex;
             flex-direction: column;
         }
     }
 }
+
+
+
+
+@import 'style-desktop'; // Importar los estilos para desktop
