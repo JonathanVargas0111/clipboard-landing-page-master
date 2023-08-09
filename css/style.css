@@ -75,6 +75,7 @@ body {
   .header .header-info__buttons {
     justify-content: center;
     margin-top: 20px;
+    margin-bottom: 20px;
   }
   .header .header-info__buttons .btn {
     width: 40%;
